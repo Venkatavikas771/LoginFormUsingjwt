@@ -25,8 +25,8 @@ public class WebConfig {
 		CorsConfiguration config = new CorsConfiguration();
 		config.setAllowCredentials(true);
 		// https://talent-tracker-front-k336pfj8a-madar1992.vercel.app
-		config.addAllowedOrigin("http://localhost:3000");
-		config.addAllowedOrigin("https://talent-tracker-front-16moz4cs2-madar1992.vercel.app");
+		config.addAllowedOrigin("http://localhost:3000")
+		config.addAllowedOrigin("https://loginform-front-end.vercel.app");
 		config.setAllowedHeaders(
 				Arrays.asList(HttpHeaders.AUTHORIZATION, HttpHeaders.CONTENT_TYPE, HttpHeaders.ACCEPT));
 		config.setAllowedMethods(Arrays.asList(HttpMethod.GET.name(), HttpMethod.POST.name(), HttpMethod.PUT.name(),
